@@ -1,1 +1,1 @@
-# JS_projects
+40 JavaScript Projects for beginers by freeCodeCamp
