@@ -1,4 +1,4 @@
-Thank to this John Smilga tutorial, fro which i learned how to create a random background color changer.
+Thank to this John Smilga(https://www.johnsmilga.com) tutorial, fro which i learned how to create a random background color changer.
 
 Key concepts covered:
 
