@@ -1,1 +1,1 @@
-40 JavaScript Projects for beginers by freeCodeCamp
+40 JavaScript Projects for beginers by freeCodeCamp (https://freeCodeCamp.org)
