@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find longuest number in an array</title>
+    <style>
+      body {
+        background: #0a0a23;
+        color: ivory;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      .container {
+        border: 1px solid ivory;
+        padding: 10px;
+      }
+      .fareng {
+        display: flex;
+        align-items: center;
+      }
+      .Far {
+        padding-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        Celcius
+        <input type="text" class="Cels" placeholder="put your value in C°" />
+      </div>
+      <div class="fareng">
+        <p>Farenheit :</p>
+        <span class="Far"></span>
+      </div>
+      <button id="btn">Convert</button>
+    </div>
+
+    <script>
+      let cels = document.querySelector(".Cels");
+      let far = document.querySelector(".Far");
+      const btn = document.getElementById("btn");
+
+      btn.addEventListener("click", () => {
+        let result = convert(cels.value);
+        far.textContent = result + "°";
+      });
+
+      function convert(n) {
+        let fahrenheit = n * (9 / 5) + 32;
+        return fahrenheit;
+      }
+    </script>
+  </body>
+</html>
