@@ -7,8 +7,10 @@
 }
 
 body {
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   min-height: 100vh;
   background-color: #242424;
@@ -29,7 +31,12 @@ body {
   display: flex;
   align-items: center;
   position: relative;
+  left: 0;
   transition: all 0.3s ease-in-out;
+}
+
+.clock_slider.slide {
+  left: -350px;
 }
 
 .analog_clock,
@@ -37,6 +44,7 @@ body {
   height: 350px;
   width: 350px;
   padding: 10px;
+  transition: all 0.3s ease-in-out;
 }
 
 .analog_clock {
@@ -127,12 +135,18 @@ body {
 
 .buttons {
   display: flex;
+  margin-top: 40px;
 }
-.buttons div {
+.btn {
+  cursor: pointer;
   font-size: 20px;
   margin: 0 20px;
 }
-
+.btn:hover {
+  color: #242424;
+  text-shadow: 0 0 10px gold, 0 0 21px gold, 0 0 42px goldenrod,
+    0 0 82px goldenrod;
+}
 .blink {
   opacity: 1;
   animation: blink ease-in-out 1s infinite;
