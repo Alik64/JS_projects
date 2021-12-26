@@ -1,1 +1,6 @@
-console.log("hello world")
+
+
+function clock() {
+
+}
+clock()
