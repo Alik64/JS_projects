@@ -35,16 +35,22 @@ function digital_clock() {
 
     const secondes = date.getSeconds()
 
-    secondes < 9
-        ? secondesScreen.innerHTML = `0 + ${secondes}`
+    secondes <= 9
+        ? secondesScreen.innerHTML = `0${secondes}`
         : secondesScreen.innerHTML = secondes
 
 
     const minutes = date.getMinutes()
-    minutesScreen.innerHTML = minutes
+    minutes <= 9
+        ? minutesScreen.innerHTML = `0${minutes}`
+        : minutesScreen.innerHTML = minutes
+
 
     const hours = date.getHours()
-    hoursScreen.innerHTML = hours
+    hours <= 9
+        ? hoursScreen.innerHTML = `0${hours}`
+        : hoursScreen.innerHTML = hours
+
 }
 setInterval(digital_clock, 1000)
 digital_clock()
