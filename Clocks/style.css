@@ -16,7 +16,7 @@ body {
   color: #c4c4c4;
 }
 
-.clock {
+.analog_clock {
   height: 350px;
   width: 350px;
   background: url(images/clock.png) center/cover;
@@ -30,7 +30,7 @@ body {
     0 15px 15px rgba(0, 0, 0, 0.3), inset 0 15px 15px rgba(0, 0, 0, 0.3);
   position: relative;
 }
-.clock::before {
+.analog_clock::before {
   content: "";
   height: 15px;
   width: 15px;
@@ -40,26 +40,26 @@ body {
   z-index: 111;
 }
 
-.hour,
-.minute,
-.seconde {
+.analog_hour,
+.analog_minute,
+.analog_seconde {
   position: absolute;
 }
 
-.hours,
-.minutes,
-.secondes {
+.analog_hours,
+.analog_minutes,
+.analog_secondes {
   display: flex;
   justify-content: center;
   position: relative;
   border-radius: 50%;
 }
 
-.hours {
+.analog_hours {
   width: 160px;
   height: 160px;
 }
-.hours::before {
+.analog_hours::before {
   content: "";
   position: absolute;
   width: 8px;
@@ -68,11 +68,11 @@ body {
   z-index: 10;
   border-radius: 6px 6px 0 0;
 }
-.minutes {
+.analog_minutes {
   width: 190px;
   height: 190px;
 }
-.minutes::before {
+.analog_minutes::before {
   content: "";
   position: absolute;
   width: 4px;
@@ -81,11 +81,11 @@ body {
   z-index: 11;
   border-radius: 6px 6px 0 0;
 }
-.secondes {
+.analog_secondes {
   width: 230px;
   height: 230px;
 }
-.secondes::before {
+.analog_secondes::before {
   content: "";
   position: absolute;
   width: 2px;
