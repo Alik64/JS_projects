@@ -1,29 +1,29 @@
 
-const hourArrow = document.querySelector('.hours');
-const minuteArrow = document.querySelector('.minutes');
-const secondeArrow = document.querySelector('.secondes');
-
-
 
 
 function clock() {
 
+    const hourArrow = document.querySelector('.hours');
+    const minuteArrow = document.querySelector('.minutes');
+    const secondeArrow = document.querySelector('.secondes');
 
+    const date = new Date()
 
+    const secondes = date.getSeconds()
+    const secondesDeg = secondes * 6
+    secondeArrow.style.transform = `rotateZ(${secondesDeg}deg)`
 
-    setInterval(() => {
-        const date = new Date()
+    const minutes = date.getMinutes()
+    const minutesDeg = minutes * 6
+    minuteArrow.style.transform = `rotateZ(${minutesDeg}deg)`
 
-        const hours = date.getHours() * 30
-        const minutes = date.getMinutes() * 6
-        const secondes = date.getSeconds() * 6
+    const hours = date.getHours()
+    const hoursDeg = hours * 30
+    hourArrow.style.transform = `rotateZ(${hoursDeg + (minutesDeg / 12)}deg)`
 
-
-        hourArrow.style.transform = `rotateZ(${hours + (minutes / 12)}deg)`
-        minuteArrow.style.transform = `rotateZ(${minutes}deg)`
-        secondeArrow.style.transform = `rotateZ(${secondes}deg)`
-
-    }, 1000)
 }
+
+setInterval(clock, 1000)
+
 clock()
 
