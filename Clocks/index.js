@@ -1,4 +1,14 @@
 
+const analogBtn = document.querySelector('.analog_btn')
+const digitalBtn = document.querySelector('.digit_btn')
+const clockSlider = document.querySelector('.clock_slider')
+
+analogBtn.addEventListener('click', () => {
+    clockSlider.style.left = "0"
+})
+digitalBtn.addEventListener('click', () => {
+    clockSlider.style.left = "-350px"
+})
 
 
 function analog_clock() {

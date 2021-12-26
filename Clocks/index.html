@@ -12,23 +12,33 @@
 
 <body>
     <div class="clock_wrapper">
-        <div class="analog_clock">
-            <div class="analog_hour">
-                <div class="analog_hours"></div>
+        <div class="clock_slider">
+
+
+            <div class="analog_clock">
+                <div class="analog_hour">
+                    <div class="analog_hours"></div>
+                </div>
+                <div class="analog_minute">
+                    <div class="analog_minutes"></div>
+                </div>
+                <div class="analog_seconde">
+                    <div class="analog_secondes"></div>
+                </div>
             </div>
-            <div class="analog_minute">
-                <div class="analog_minutes"></div>
-            </div>
-            <div class="analog_seconde">
-                <div class="analog_secondes"></div>
+            <div class="digital_clock">
+                <div class="screen digital_hours"></div> <span class="blink">:</span>
+                <div class="screen digital_minutes"></div> <span class="blink">:</span>
+                <div class="screen digital_secondes"></div>
             </div>
         </div>
-        <div class="digital_clock">
-            <div class="digital_hours"></div>
-            <div class="digital_minutes"></div>
-            <div class="digital_secondes"></div>
-        </div>
+
     </div>
+    <div class="buttons">
+        <div class="analog_btn">ANA</div>
+        <div class="digit_btn">DIG</div>
+    </div>
+
 
     <script src="index.js"></script>
 </body>
