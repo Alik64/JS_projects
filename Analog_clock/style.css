@@ -1,0 +1,13 @@
+*,
+::after,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #242424;
+  color: #c4c4c4;
+}
